@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+
+	"name": "ChromeScraper",
+	"description": "A proof of concept for scraping with Chrome",
+	"version": "1.0",
+
+	"browser_action": {
+		"default_icon": "icon128.png",
+		"default_popup": "popup.html"
+	},
+	"permissions": [
+		"tabs",
+		"<all_urls>"
+	],
+	"content_scripts": [
+		{
+			"run_at": "document_end",
+			"matches": ["<all_urls>"],
+			"js": ["contentscript.js"]
+		}
+	],
+	"background": {
+		"scripts": ["background.js"]
+	}
+}
