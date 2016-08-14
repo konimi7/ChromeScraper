@@ -1,3 +1,7 @@
+# What?
+
+A proof of concept to scrape web pages using Chrome.
+
 # Why?
 
 In my (very) limited experience, scraping websites beyond logins can be very difficult in Python, particularly where client side code execution is required for authentication where tools such as [ghost.py](http://jeanphix.me/Ghost.py/) are required to effectively emulate a full browser.
